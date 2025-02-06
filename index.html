@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria ChiChi e Mommy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pizzeria ChiChi e Mommy</h1>
+        <nav>
+            <button id="foodBtn">Menù Cibo</button>
+            <button id="drinksBtn">Menù Bibite</button>
+            <button id="snacksBtn">Menù Sfizi</button>
+            <button id="cartBtn">Carrello</button>
+        </nav>
+    </header>
+    
+    <div id="menuContainer">
+        <!-- Menù Cibo -->
+        <div id="foodMenu" class="menu">
+            <h2>Menù Cibo</h2>
+            <ul>
+                <li><button class="menuItem" data-price="4.00" data-item="Pizza Margherita">Pizza Margherita - €4.00</button></li>
+                <li><button class="menuItem" data-price="3.50" data-item="Pizza Marinara">Pizza Marinara - €3.50</button></li>
+                <li><button class="menuItem" data-price="5.00" data-item="Pizza Wrustel e Patatine">Pizza Wrustel e Patatine - €5.00</button></li>
+                <li><button class="menuItem" data-price="5.00" data-item="Pizza Mimosa">Pizza Mimosa - €5.00</button></li>
+                <li><button class="menuItem" data-price="5.00" data-item="Pizza Crocchè">Pizza Crocchè - €5.00</button></li>
+                <li><button class="menuItem" data-price="5.00" data-item="Pizza Provola e Pepe">Pizza Provola e Pepe - €5.00</button></li>
+            </ul>
+        </div>
+
+        <!-- Menù Bibite -->
+        <div id="drinksMenu" class="menu">
+            <h2>Menù Bibite</h2>
+            <ul>
+                <li><button class="menuItem" data-price="0.80" data-item="Acqua Naturale/Frizzante 0,5 l">Acqua Naturale/Frizzante 0,5 l - €0.80</button></li>
+                <li><button class="menuItem" data-price="1.50" data-item="Acqua Naturale/Frizzante 2 l">Acqua Naturale/Frizzante 2 l - €1.50</button></li>
+                <li><button class="menuItem" data-price="0.80" data-item="Pepsi Cola 33c">Pepsi Cola 33c - €0.80</button></li>
+                <li><button class="menuItem" data-price="2.00" data-item="Pepsi Cola 1,5 l">Pepsi Cola 1,5 l - €2.00</button></li>
+            </ul>
+        </div>
+
+        <!-- Menù Sfizi -->
+        <div id="snacksMenu" class="menu">
+            <h2>Menù Sfizi</h2>
+            <ul>
+                <li><button class="menuItem" data-price="0.80" data-item="Caffè">Caffè - €0.80</button></li>
+                <li><button class="menuItem" data-price="1.00" data-item="Meloncello">Meloncello - €1.00</button></li>
+                <li><button class="menuItem" data-price="1.50" data-item="Limoncello">Limoncello - €1.50</button></li>
+                <li><button class="menuItem" data-price="2.00" data-item="Grappa">Grappa - €2.00</button></li>
+                <li><button class="menuItem" data-price="1.50" data-item="Patatine piccole">Patatine piccole - €1.50</button></li>
+                <li><button class="menuItem" data-price="2.00" data-item="Patatine medie">Patatine medie - €2.00</button></li>
+                <li><button class="menuItem" data-price="3.50" data-item="Patatine grandi">Patatine grandi - €3.50</button></li>
+                <li><button class="menuItem" data-price="2.00" data-item="Frittatina">Frittatina - €2.00</button></li>
+                <li><button class="menuItem" data-price="2.00" data-item="5 Zeppole">5 Zeppole - €2.00</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Carrello -->
+    <div id="cartContainer" class="menu">
+        <h2>Carrello</h2>
+        <ul id="cartItems"></ul>
+        <p>Total: €<span id="cartTotal">0.00</span></p>
+        <button id="clearCart">Svuota Carrello</button>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Pizzeria ChiChi e Mommy</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
